@@ -2,22 +2,8 @@ const inforClient = document.getElementById("clientData");
 const addressClient = document.getElementById("inputAddress");
 const inputProduc = document.getElementById("inputProduct");
 
-const person = document.getElementById("name").value;
-const cpf = document.getElementById("cpf").value;
-const phone = document.getElementById("phone").value;
-const email = document.getElementById("email").value;
-
 const cep = document.getElementById("cep").addEventListener("focusout", pesquisarCep)
-const street = document.getElementById("street");
-const numberHouse = document.getElementById("number");
-const complemment = document.getElementById("complemment");
-const district = document.getElementById("district");
-const city = document.getElementById("city");
-const state = document.getElementById("state");
 
-const product = document.getElementById("product");
-
-const correct = document.getElementById("correct");
 const send = document.getElementById("send");
 const back = document.getElementById("back");
 const next = document.getElementById("next");
