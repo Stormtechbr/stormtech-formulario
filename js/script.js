@@ -96,9 +96,6 @@ function nextPage() {
         next.setAttribute("class", "noNext");
         send.removeAttribute("class", "send")
     }
-
- 
-
 };
 
 
