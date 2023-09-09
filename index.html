@@ -4,80 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
     <title>Cadastro de Usuario</title>
 </head>
 <body>
-<header>
-    <h1>STORMTECH</h1>
-</header>
+    <main>
+        <header>
+            <img src="img/logo-stormtech.PNG" alt="">
+        </header>
 
-<section class="hero">
-    <p>Preencha seus dados para emissão de seu Termo de garantia ou Nota Fiscal.</p>
-</section>
+        <section class="hero">
+            <p>Preencha seus dados para emissão do Termo de garantia ou Nota Fiscal.</p>
+        </section>
 
-<form action="https://formsubmit.co/cristhianvcezar@gmail.com" method="POST">
-    <input type="hidden" name="_cc" value="stbr.ceo@gmail.com">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://cristhiancezar.github.io/cadastro-de-cliente-stormtech/sucessSubmit.html">
-    <div id="clientData">
-        <div class="inputName">
-            <label for="name">Nome:</label>
-            <input type="text" name="Nome" id="name">
-        </div>
+        <form 
+            action="https://formsubmit.co/cristhianvcezar@gmail.com" 
+            method="POST">
 
-        <div class="inputCpf">
-            <label for="cpf">CPF:</label>
-            <input type="text" name="CPF" placeholder="Digite somente números" id="cpf">
-        </div>
+            <input type="hidden" name="_cc" value="stbr.ceo@gmail.com">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://elavc.github.io/catalago-iphones-storm/">
+        
+                <div class="wrapper selected">
+                    <label for="name">Nome:</label>
+                    <input type="text" class="input-value" name="Nome" id="name">
+                </div>
 
-        <div class="inputPhone">
-            <label for="phone">Celular:</label>
-            <input type="tel" maxlength="14" minlength="8" name="phone" id="phone">
-        </div>
+                <div class="wrapper">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" class="input-value" name="CPF" placeholder="Digite somente números" id="cpf">
+                </div>
 
-        <div class="inputEmail">
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email">
-        </div>
-    </div>
+                <div class="wrapper">
+                    <label for="phone">Celular:</label>
+                    <input type="tel" class="input-value" maxlength="14" minlength="8" name="phone" id="phone">
+                </div>
 
-    <div class="inputAddress" id="inputAddress">
-        <label for="cep">Cep:</label>
-        <input type="text" name="CEP" id="cep">
+                <div class="wrapper">
+                    <label for="email">E-mail:</label>
+                    <input type="email" class="input-value" name="email" id="email">
+                </div>
 
-        <label for="street">Rua:</label>
-        <input type="text" name="Rua" id="street">
+                <div class="wrapper">
+                    <label for="cep">Cep:</label>
+                    <input type="text" class="input-value" name="CEP" id="cep">
+                </div>
 
-        <label for="number">Número da Casa:</label>
-        <input type="text" name="Número" id="number">
+                <div class="wrapper">
+                    <label for="street">Rua:</label>
+                    <input type="text" class="input-value" name="Rua" id="street">
+                </div>
+                <div class="wrapper">
+                    <label for="number">Número da Casa:</label>
+                    <input type="text" class="input-value" name="Número" id="number">
+                </div>
+                <div class="wrapper">
+                    <label for="district">Bairro:</label>
+                <input type="text" class="input-value" name="District" id="district">
+                </div>
+                <div class="wrapper">
+                    <label for="city">Cidade:</label>
+                    <input type="text" class="input-value" name="Cidade" id="city">
+                </div>
+                <div class="wrapper">
+                    <label for="state">Estado:</label>
+                    <input type="text" class="input-value" name="Estado" id="state">
+                </div>
 
-        <label for="complemment">Complemento:</label>
-        <input type="text" name="Complemento" id="complemment">
+                <div class="wrapper">
+                    <label for="product">Produto Comprado:</label>
+                    <select name="products" class="list-products input-value select2" id="products" style="width: 100%;">
+                        <option value="iPhone XS" name="iPhone XS" class="item">iPhone XS</option>
+                        <option value="" class="item">iPhone XS Max</option>
+                        <option value="" class="item">iPhone SE</option>
+                        <option value="" class="item">iPhone 8</option>
+                        <option value="" class="item">iPhone 8 Plus</option>
+                        <option value="" class="item">iPhone XR</option>
+                        <option value="" class="item">iPhone 11</option>
+                        <option value="" class="item">iPhone 11 Pro</option>
+                        <option value="" class="item">iPhone 11 Pro Max</option>
+                        <option value="" class="item">iPhone 12</option>
+                        <option value="" class="item">iPhone 12 Mini</option>
+                        <option value="" class="item">iPhone 12 Pro</option>
+                        <option value="" class="item">iPhone 12 Pro Max</option>
+                        <option value="" class="item">iPhone 13</option>
+                        <option value="" class="item">iPhone 13 Mini</option>
+                        <option value="" class="item">iPhone 13 Pro</option>
+                        <option value="" class="item">iPhone 13 Pro Max</option>
+                        <option value="" class="item">iPhone 14</option>
+                        <option value="" class="item">iPhone 14 Plus</option>
+                        <option value="" class="item">iPhone 14 Pro</option>
+                        <option value="" class="item">iPhone 14 Pro Max</option>
+                    </select>
+                </div>
+                
 
-        <label for="district">Bairro:</label>
-        <input type="text" name="District" id="district">
+            <div class="buttons">
+                <button type="submit" class="send" id="send">Enviar dados</button>
+                <button type="button" class="next" id="next">Próximo</button>
+                <button type="button" class="back"id="back">Voltar</button>
+            </div>
+        </form>
+    </main>
 
-        <label for="city">Cidade:</label>
-        <input type="text" name="Cidade" id="city">
-
-        <label for="state">Estado:</label>
-        <input type="text" name="Estado" id="state">
-
-    </div>
-
-    <div class="inputProduct" id="inputProduct">
-        <label for="product">Produto Comprado:</label>
-        <input type="text" name="Produto Selecionado" id="product">
-    </div>
-    <div class="buttons">
-        <button type="submit" class="send" id="send">Enviar dados</button>
-        <button type="button" class="next" id="next">Próxima Página</button>
-        <button type="button" class="back"id="back">Voltar</button>
-    </div>
-</form>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/skip.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.select2').select2();
+        });
+    </script>
 </body>
 </html>
