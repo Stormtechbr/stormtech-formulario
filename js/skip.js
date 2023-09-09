@@ -38,6 +38,11 @@ function backCard() {
         index--;
     }
 
+    if(index !== max) {
+        nextBtn.style.display = 'block';
+        sendBtn.style.display = 'none';
+    }
+
     cards[index].classList.add('selected');
 }
 

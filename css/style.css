@@ -12,18 +12,16 @@ label {
 }
 
 input {
-    font-size: 24px;
-    margin: 12px 0;
+    font-size: 16px;
+    margin: 16px 0;
     outline: none;
     border: none;
     border-bottom: 1px solid black;
-    /* padding-top: 16px; */
 }
 
 button {
     font-size: 12px;
-    padding: 0.4rem 0 ;
-    margin-bottom: 0.8rem;
+    margin-bottom: 14px;
 }
 
 body {
@@ -103,6 +101,7 @@ form button {
     background: #FF416C;  
     background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
     background: linear-gradient(to right, #FF4B2B, #FF416C);
+    color: white;
 }
 
 .back {
@@ -113,8 +112,10 @@ form button {
     display: none;
 }
 
-.noNext {
-    display: none;
+.buttons {
+    border-radius: none;
+    padding: 12px 0;
+
 }
 
 #select2-products-container {
