@@ -113,6 +113,8 @@ form button {
 }
 
 .buttons {
+    -webkit-border-radius: none;
+    -webkit-padding: 12px 0;
     border-radius: none;
     padding: 12px 0;
 
